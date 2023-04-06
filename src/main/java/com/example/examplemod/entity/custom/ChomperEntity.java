@@ -31,14 +31,6 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 
-
-
-
-
-
-
-
-
 public class ChomperEntity extends Monster implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
