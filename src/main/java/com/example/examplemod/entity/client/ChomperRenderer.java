@@ -22,7 +22,7 @@ public class ChomperRenderer extends GeoEntityRenderer<ChomperEntity> {
     }
     @Override
     public ResourceLocation getTextureLocation(ChomperEntity instance) {
-        return new ResourceLocation(TutorialMod.MOD_ID, "textures/entity/entity.png");
+        return new ResourceLocation(ExampleMod.MOD_ID, "textures/entity/entity.png");
     }
     @Override
     public RenderType getRenderType(ChomperEntity animatable, float partialTicks, PoseStack stack,
