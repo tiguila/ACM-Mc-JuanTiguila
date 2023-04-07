@@ -14,6 +14,9 @@ public class ChomperModel extends AnimatedGeoModel<ChomperEntity> {
     @Override
     public ResourceLocation getTextureResource(ChomperEntity object) {
         return new ResourceLocation(ExampleMod.MOD_ID, "textures/entity/entity.png");
+
+
+
     }
 
     @Override
