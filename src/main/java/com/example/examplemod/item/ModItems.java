@@ -59,6 +59,10 @@ public class ModItems {
     public static final RegistryObject<Item> hat = ITEMS.register("hat",
             () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
+    // register backpack item
+
+    public static final RegistryObject<Item> backpack = ITEMS.register("backpack",
+            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.CHEST,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
 
 

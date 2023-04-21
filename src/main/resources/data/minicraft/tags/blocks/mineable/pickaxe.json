@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "tutorialmod:acm_block",
+        "tutorialmod:acm_ore"
+    ]
+}
