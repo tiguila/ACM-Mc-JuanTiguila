@@ -49,4 +49,17 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+
+
+
+    // ----------------
+    // register item
+    // @hat is the .png image name
+    public static final RegistryObject<Item> hat = ITEMS.register("hat",
+            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+
+
+
+
 }
