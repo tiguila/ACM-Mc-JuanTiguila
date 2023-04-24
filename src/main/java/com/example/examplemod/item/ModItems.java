@@ -12,6 +12,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import com.example.examplemod.ciggar.CigaretteItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -50,21 +51,24 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    // ----------------
+
     // register item
-    // @hat is the .png image name
+    // @hat is the .png image name - start
     public static final RegistryObject<Item> hat = ITEMS.register("hat",
             () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+    // register backpack item - end
 
-    // register backpack item
+
     // define backpack item
-    public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack",
+    public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack_item",
             () -> new BlockItem(ModBlocks.BACKPACK_BLOCK.get(),
                     new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
 
-    public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack", () ->
-            new BackpackItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+    // register fattest ciggar - start
+    public static final RegistryObject<Item> CIGARETTE = ITEMS.register("cigarette", () ->
+            new CigaretteItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+    // register fattest ciggar - end
 
 
 }
