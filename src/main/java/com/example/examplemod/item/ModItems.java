@@ -1,7 +1,9 @@
 package com.example.examplemod.item;
+
 import com.example.examplemod.block.ModBlocks;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.entity.BackpackEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -36,34 +38,33 @@ public class ModItems {
 
     //armor below
     public static final RegistryObject<Item> EXAMPLE_HELMET = ITEMS.register("example_helmet",
-            () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+            () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> EXAMPLE_CHESTPIECE = ITEMS.register("example_chestpiece",
-            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.CHEST,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+            () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> EXAMPLE_LEGGINGS = ITEMS.register("example_leggings",
-            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.LEGS,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+            () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> EXAMPLE_BOOTS = ITEMS.register("example_boots",
-            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.FEET,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
-
-
+            () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
 
-
-
-
     // ----------------
     // register item
     // @hat is the .png image name
     public static final RegistryObject<Item> hat = ITEMS.register("hat",
-            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+            () -> new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
     // register backpack item
+    // define backpack item
+    public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack",
+            () -> new BlockItem(ModBlocks.BACKPACK_BLOCK.get(),
+                    new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
-    public static final RegistryObject<Item> backpack = ITEMS.register("backpack",
-            () -> new ArmorItem(ArmorMaterials.DIAMOND,EquipmentSlot.CHEST,new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
+    public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack", () ->
+            new BackpackItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
 
 }
