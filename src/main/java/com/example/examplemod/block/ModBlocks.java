@@ -52,14 +52,22 @@ public class ModBlocks {
         BLOCKS.register(eventBus);
     }
 
+    // register cigarette item start
+    public static final RegistryObject<Block> CIGGAR = registerBlock("cigarette",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1)), ModCreativeModTab.TUTORIAL_TAB);
+    // register cigarette item end
+
+
+
+    // register Apple item start
+    public static final RegistryObject<Block> APPLE = registerBlock("apple",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2)), ModCreativeModTab.TUTORIAL_TAB);
+    // register Apple item end
+
 
     //     BACKPACK_BLOCK registry object start
-    public static final RegistryObject<Block> BACKPACK_BLOCK = registerBlock("backpack_block",
-            () -> new BackpackBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2.0F)
-                    .sound(SoundType.WOOD)
-                    .lightLevel((state) -> 14)), ModCreativeModTab.TUTORIAL_TAB);
-//     BACKPACK_BLOCK registry object end
+
+    //     BACKPACK_BLOCK registry object end
 
 
 }
