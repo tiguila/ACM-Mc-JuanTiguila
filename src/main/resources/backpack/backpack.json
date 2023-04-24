@@ -1,0 +1,11 @@
+{
+  "name": "Backpack",
+  "description": "A backpack with a capacity of 16 items.",
+  "capacity": 16,
+  "items": [
+    "item.sword",
+    "item.axe",
+    "item.pickaxe",
+    "item.shovel"
+  ]
+}
