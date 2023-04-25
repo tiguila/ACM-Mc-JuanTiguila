@@ -61,14 +61,8 @@ public class ModItems {
 
     // define backpack item
     public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack_item",
-            () -> new BlockItem(ModBlocks.BACKPACK_BLOCK.get(),
-                    new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
-
-    // register fattest ciggar - start
-    public static final RegistryObject<Item> CIGARETTE = ITEMS.register("cigarette", () ->
-            new CigaretteItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
-    // register fattest ciggar - end
 
 
 }

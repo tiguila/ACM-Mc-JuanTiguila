@@ -82,10 +82,10 @@ public class ModEntityTypes {
                             .build(new ResourceLocation(ExampleMod.MOD_ID, "backpack").toString()));
 
     public static final RegistryObject<EntityType<CigarEntity>> CIGAR =
-            ENTITY_TYPES.register("cigar",
+            ENTITY_TYPES.register("cigarette",
                     () -> EntityType.Builder.of(CigarEntity::new, MobCategory.MISC)
                             .sized(0.2f, 0.2f)
-                            .build(new ResourceLocation(ExampleMod.MOD_ID, "cigar").toString()));
+                            .build(new ResourceLocation(ExampleMod.MOD_ID, "cigarette").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
