@@ -53,12 +53,21 @@ public class ModEntityTypes {
                             .sized(0.4f, 1.5f)
                             .build(new ResourceLocation(ExampleMod.MOD_ID, "chomper").toString()));
 
-    public static final RegistryObject<EntityType<CompanionEntity>> BACKPACK =
+    public static final RegistryObject<EntityType<BackpackEntity>> BACKPACK =
             ENTITY_TYPES.register("ceobackpack",
-                    () -> EntityType.Builder.of(CompanionEntity::new, MobCategory.MISC)
+                    () -> EntityType.Builder.of(BackpackEntity::new, MobCategory.MISC)
                             .sized(0.25f, 0.25f)
                             .build(new ResourceLocation(ExampleMod.MOD_ID, "ceobackpack").toString()));
 
+
+
+// new added - start
+    public static final RegistryObject<EntityType<CigarEntity>> cigarette =
+            ENTITY_TYPES.register("cigarette",
+                    () -> EntityType.Builder.of(CigarEntity::new, MobCategory.MISC)
+                            .sized(0.25f, 0.25f)
+                            .build(new ResourceLocation(ExampleMod.MOD_ID, "cigarette").toString()));
+    // new added - end
 
     public static final RegistryObject<EntityType<CompanionEntity>> Companion =
             ENTITY_TYPES.register("companion",
