@@ -3,7 +3,7 @@ package com.example.examplemod.item;
 import com.example.examplemod.block.ModBlocks;
 
 import com.example.examplemod.ExampleMod;
-import com.example.examplemod.entity.BackpackEntity;
+//import com.example.examplemod.entity.BackpackEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -59,9 +59,6 @@ public class ModItems {
     // register backpack item - end
 
 
-    // define backpack item
-    public static final RegistryObject<Item> BACKPACK = ITEMS.register("backpack_item",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
 
 
 

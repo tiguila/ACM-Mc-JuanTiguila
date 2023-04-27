@@ -7,18 +7,18 @@ public class ModCreativeModTab {
     public static final CreativeModeTab TUTORIAL_TAB = new CreativeModeTab("tutorialtab") {
 
         // original
-//        public ItemStack makeIcon() {
-//            return new ItemStack(ModItems.ACMIUM.get());
-//        }
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.ACMIUM.get());
+        }
 
 
 
 
         // modified
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.BACKPACK.get());
-        }
+//        @Override
+//        public ItemStack makeIcon() {
+//            return new ItemStack(ModItems.BACKPACK.get());
+//        }
 
 
 
