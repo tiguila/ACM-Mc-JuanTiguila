@@ -65,9 +65,17 @@ public class ModBlocks {
     // register Apple item end
 
 
-    //     BACKPACK_BLOCK registry object start
 
+    //     BACKPACK_BLOCK registry object start
+    public static final RegistryObject<Block> ceobackpack = registerBlock("ceobackpack",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2)), ModCreativeModTab.TUTORIAL_TAB);
     //     BACKPACK_BLOCK registry object end
 
+
+
+    //     companion registry object start
+    public static final RegistryObject<Block> COMPANION = registerBlock("companion",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2)), ModCreativeModTab.TUTORIAL_TAB);
+    //     companion registry object end
 
 }
